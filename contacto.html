@@ -9,30 +9,30 @@
 <body>
   <main>
   
-    <h3>More information?</h3>
-    <h4>I have a question!</h4>
-    <h4>I'm interested in lessons</h4>
-      
+    <h2>More information?</h2>
+    <h3>Complete the form below</h3>
+          
     <form>
       <label for="name">Name</label>
-      <input type="text" name="name" id="name">
+      <input type="text" name="name" id="name" required placeholder="required">
+      <label for="contact">Email</label>
+      <input type="text" name="name" id="contact" required placeholder="required">
+      <label for="tel">Tel</label>
+      <input type="text" name="name" id="tel" required>
       <p>Write your question(s) here:</p>
       <textarea id="question" name="question" id="question" ></textarea>
-      
-      <p>Sports</p>
+      <h4>Are you looking for lessons? Please complete the following:</h4>
+      <p>Which sport are you interested in?</p>
       <label for="sports">Kayaking</label>
       <input type="checkbox" name="sports" id="kayak">
-      <p>Sports</p>
       <label for="sports">Surfing</label>
       <input type="checkbox" name="sports" id="surf">
-      <p>Sports</p>
       <label for="sports">Paddlesurf</label>
       <input type="checkbox" name="sports" id="paddle">
-      <p>Sports</p>
       <label for="sports">Water skiing</label>
       <input type="checkbox" name="sports" id="skiing">
 
-      <p>Level</p>
+      <p>Your current level</p>
       <label for="beginner">I'm a rookie!</label>
       <input type="radio" name="level" id="beginner">
       <label for="int">I know what I'm doing</label>
@@ -41,12 +41,24 @@
       <input type="radio" name="level" id="ad">
 
       <label for="number">Number of people</label>
-      <input type="number" name="number" id="number" value="1">
+      <input type="number" name="number" id="number" value="1" min="1" max="6">
+      <p>For groups over 6, please call us</p>
+      
+      <label for="sports">Subscribe to our newsletter</label>
+      <input type="checkbox" name="sports" id="kayak">
+
+      
+      <input type="submit" value="send">
+      <p>Thank you! We'll be in touch shortly!</p>
+
 
 
 
     </form>
-  </main>    
+  </main>
+  <footer>
+    
+  </footer>    
     
 </body>
 </html>
