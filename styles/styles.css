@@ -1,8 +1,12 @@
-* {
+body {
   margin: 0;
   padding: 0;
+  }
+
+* {
   box-sizing: border-box;
   text-decoration: none;
+  
 }
 
 :root {
@@ -13,6 +17,122 @@
   --sand: #e6af2eff;
 
 }
+
+/* INDEX */
+
+.logo-container {
+  height: 60px;
+  padding: 8px 15px 8px;
+  background-color: var(--cyan);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center; 
+}
+
+.logo-container img {
+  height: 40px;
+}
+
+.logo-container img, p {
+  padding: 0 15px; 
+}
+
+
+.navindex {
+   
+}
+
+.navindex ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  
+  list-style-type: none;
+  padding: 1em;
+  background-color: white;
+  
+}
+
+li a {
+  color: var(--carib);
+  font-weight: bold; 
+}
+
+main {
+  margin: 0 10vw;
+}
+
+main p {
+  margin: 15px 5vw;
+}
+
+.intro {
+  margin-top:15px;
+  border: 2px solid black;
+  max-height: 80vh; /* change this for different screen sizes later*/
+  display: flex;
+  justify-content: center;
+  
+}
+
+.intro img {
+  opacity: 1;
+  width: 10%;
+  /* animation-name: appear;
+  animation-fill-mode: forwards;
+  animation-duration: 4s; */
+  
+}
+
+.intro img:nth-child(1) {
+  animation-delay: 3s;
+}
+.intro img:nth-child(2) {
+  animation-delay: 3.5s;
+}
+.intro img:nth-child(3) {
+  animation-delay: 4s;
+}
+.intro img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.intro img:nth-child(5) {
+  animation-delay: 5s;
+}
+.intro img:nth-child(6) {
+  animation-delay: 5.5s;
+}
+.intro img:nth-child(7) {
+  animation-delay: 6s;
+}
+.intro img:nth-child(8) {
+  animation-delay: 6.5s;
+}
+.intro img:nth-child(9) {
+  animation-delay: 7s;
+}
+.intro img:nth-child(10) {
+  animation-delay: 7.5s;
+}
+
+
+
+
+
+
+footer {
+  background-color: var(--cyan);
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
 
 
 /*GALLERY*/
@@ -39,13 +159,14 @@
   background-color: grey;
   justify-content: center;
   align-items: center;
-  
-
-}
-
-.photos {
-  /* width: 15%; */
 }
 
 
 /* TEST FOR MAIN IMAGE */
+
+
+@keyframes appear{
+  0% {opacity:0;}
+  50% {width: 110%}
+  100% {opacity:1;}
+}
