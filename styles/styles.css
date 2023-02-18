@@ -63,11 +63,11 @@ li a {
   font-weight: bold; 
 }
 
-main {
+main.index {
   margin: 0 10vw;
 }
 
-main p {
+.index p {
   margin: 15px 5vw;
 }
 
@@ -169,4 +169,70 @@ footer {
   0% {opacity:0;}
   50% {width: 110%}
   100% {opacity:1;}
+}
+
+
+
+/* CONTACT */
+
+.contact-container {
+  display: flex;
+  margin: 4% 10% 10% 10%;
+  border: 2px solid var(--cel);
+  border-radius: 5px; 
+}
+
+.contactUs {
+  padding: 10% 10%;
+  background-color: var(--cel);
+  flex-grow: 1;
+  text-align: center;  
+}
+
+form {
+  padding: 10%;
+  flex-grow: 3;
+ 
+}
+
+form >*>* {
+  margin: 5px 0 0 0;
+  padding: 4px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;  
+}
+
+label, textarea {
+  display: block;
+}
+
+.oneLine>label{
+  display: inline;
+ }
+
+input[type=submit] {
+  padding: 5%;
+  width: 100%;
+  background-color: var(--cyan);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 6px 6px 10px grey;
+  color: white;
+
+}
+
+input[type=text],[type=number], textarea {
+  border: 2px solid var(--cyan);
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px grey;
+  padding: 5px;
+  
+}
+
+textarea {
+  resize: vertical;
+  max-height: 300px;
 }
