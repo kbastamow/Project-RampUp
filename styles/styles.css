@@ -63,7 +63,7 @@ li a {
   font-weight: bold; 
 }
 
-main.index {
+main index {
   margin: 0 10vw;
 }
 
@@ -180,18 +180,19 @@ footer {
   margin: 4% 10% 10% 10%;
   border: 2px solid var(--cel);
   border-radius: 5px; 
+  flex-wrap: wrap;
 }
 
 .contactUs {
   padding: 10% 10%;
   background-color: var(--cel);
-  flex-grow: 1;
+  flex: 1;
   text-align: center;  
 }
 
 form {
   padding: 10%;
-  flex-grow: 3;
+  flex: 3;
  
 }
 
@@ -236,3 +237,30 @@ textarea {
   resize: vertical;
   max-height: 300px;
 }
+
+
+
+/*BIOGRAPHY*/
+
+.bio-container {
+  display: flex;
+  margin: 5%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+section {
+  margin: 1%;
+  padding: 3% 2%;
+  text-align: center;
+  flex: 1;
+  max-width: 40%;
+  background-color: var(--sun);
+  border-radius: 5px; 
+}
+
+section img {
+  border-radius: 50px;
+  max-width: 100px;
+}
+
