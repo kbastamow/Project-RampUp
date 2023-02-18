@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --sun: #fadf63ff;
+  --carib: #246a73ff;
+  --cyan: #368f8bff;
+  --cel: #c4fff9ff;
+  --sand: #e6af2eff;
+
+}
+
+
+/*GALLERY*/
+
+.bigpic {
+  padding: 1em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.bigpic img{
+  max-width: 80%;
+}
+
+.caption {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  background-color: grey;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.photos {
+  /* width: 15%; */
+}
+
+
+/* TEST FOR MAIN IMAGE */
