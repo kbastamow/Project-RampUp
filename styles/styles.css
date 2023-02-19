@@ -179,12 +179,9 @@ main.gallery {
   
 }
 
-.bigpic p{
+/* .bigpic p{
   font-size: xxx-large;
-
-
-
-}
+} */
 
 .bigpic img{
   max-width: 60%;

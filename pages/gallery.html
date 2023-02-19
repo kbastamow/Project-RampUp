@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script type="text/javascript" src="../js/functions.js"></script>
     <title>Gallery</title>
 </head>
 <body>
@@ -22,13 +23,14 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-
+  <p id="demo"></p>
   <main class="gallery">
+   
     
       <div class="bigpic">
-        <p>&#171;</p>
-        <img src="..\assets\Images\Gallery\image1.jpg" alt="">
-        <p>&#187</p>
+        <!-- <p>&#171;</p> -->
+        <img src="../assets/Images/Gallery/image1.jpg" alt="sea images" id="bigpic">
+        <!-- <p>&#187</p> -->
       </div>
 
       <!-- <div class="caption">
@@ -37,19 +39,19 @@
 
       <div class="img-container">
         <!-- <div class="photos"> -->
-        <img src="..\assets\Images\Gallery\image1.jpg" alt="">  
+        <img src="../assets/Images/Gallery/image1.jpg" alt="" onclick="changePic(this)">  
         <!-- </div> -->
         <!-- <div class="photos"> -->
-          <img src="..\assets\Images\Gallery\image5.jpg" alt="">
+          <img src="../assets/Images/Gallery/image3.jpg" alt="" onclick="changePic(this)">
         <!-- </div>
         <div class="photos"> -->
-          <img src="..\assets\Images\Gallery\image3.jpg" alt="">
+          <img src="../assets/Images/Gallery/image4.jpg" alt="" onclick="changePic(this)">
         <!-- </div>
         <div class="photos"> -->
-          <img src="..\assets\Images\Gallery\image7.jpg" alt="">
+          <img src="../assets/Images/Gallery/image5.jpg" alt="" onclick="changePic(this)">
         <!-- </div>
         <div class="photos"> -->
-          <img src="..\assets\Images\Gallery\image6.jpg" alt="">
+          <img src="../assets/Images/Gallery/image6.jpg" alt="" onclick="changePic(this)">
         <!-- </div> -->
       </div>
 
@@ -71,6 +73,10 @@
   <footer>
     
   </footer> 
+
+
+
+
 
 </body>
 </html>
