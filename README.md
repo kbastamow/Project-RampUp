@@ -30,12 +30,12 @@ Visual Studio Code as code editor.
 
 *KBastamow
 
-This was a solo project and all the mess in the code can be blamed on the author and no one else.
+This was a solo homework project and all the mess in the code can be blamed on the author and no one else.
 Please note that this is my first multi-page project and one of the first projects ever in HTML-CSS.
 
 ## Acknowledgements
 
-Knowledgeable teachers and supportive classmates are the way forward. I would also like to express my gratitude to Google, as well as W3schools and Stack Overflow.
+Supportive teachers and classmates are the way forward. I would also like to express my gratitude to Google, as well as W3schools and Stack Overflow.
 
 
 
