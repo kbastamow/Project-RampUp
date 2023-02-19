@@ -9,7 +9,6 @@ body {
 * {
   box-sizing: border-box;
   text-decoration: none;
-  
 }
 
 :root {
@@ -20,6 +19,8 @@ body {
   --sand: #e6af2eff;
 }
 
+/* TOP BAR, NAVBAR AND FOOTER -common for all pages */
+
 .logo-container {
   max-height:60px;
   background-color: var(--cyan);
@@ -27,7 +28,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 0 10px 0; 
+  padding: 0 0 10px 0;
 }
 
 .logo-container img {
@@ -39,33 +40,34 @@ body {
 h1 {
   font-family: "Kaushan Script", cursive;
   margin: 0;
-  color: var(--carib);  
+  color: var(--carib);
 }
 
 .logo-container span {
   color: var(--cel);
   font-size: 14px;
-  font-weight:80;
+  font-weight: 80;
 }
 
 .navindex ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: var(--cyan);
-
+  padding-inline-start: 0; /*This is what was skewing my positioning! A default list left padding must be reset*/
 }
 
 li {
   background-color: white;
   list-style-type: none;
- 
+  padding: 0 10px;
 }
 
 li a {
-  padding: 10px 15px; /*This is how I get the whole area take link. No padding in "li"*/
+  padding: 10px; /*This is how I get the whole area take link. No padding in "li"*/
   display:block;
   color: var(--carib);
-  font-size: medium; 
+  font-size: medium;
 }
 
 li a:hover {
@@ -74,223 +76,109 @@ li a:hover {
 }
 
 a.active {
-  font-weight: bold; 
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--cyan);
+  padding: 5px 0 2px 0;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* INDEX */
 
-
 main.index {
-  margin: 0 10vw;
+  margin: 0 15vw;
+  padding: 0px 10%;
 }
 
 .index p {
-  text-align:center;
+  text-align: center;
 }
 
 .intro {
   margin-top:15px;
-  max-height: 80vh; /* change this for different screen sizes later*/
+  width: 50vw; /*change for different sizes later*/
   display: flex;
   justify-content: center;
   position: relative;
-  
+
 }
 
-.intro p {
-  color: white;
+.intro h2 {
   position: absolute;
   top: 20%;
   left: 10%;
+  font-family: "Kaushan Script", cursive;
+  font-size: 160%;
+  font-weight: 10;
+  letter-spacing: 0.4em;
+  color: var(--cel);
+  text-shadow: 2px 2px 8px white;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
 }
 
 
 .intro img {
-  opacity: 1;
+  opacity: 0;
   width: 10%;
-  /* animation-name: appear;
+  animation-name: appear;
   animation-fill-mode: forwards;
-  animation-duration: 3s; */
-  
+  animation-duration: 3s;
+}
+
+.index p {
+  margin: 10px;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-delay: 13s;
+  animation-fill-mode: forwards;
 }
 
 .intro img:nth-child(1) {
   animation-delay: 3s;
 }
 .intro img:nth-child(2) {
-  animation-delay: 4s;
+  animation-delay: 3.5s;
 }
 .intro img:nth-child(3) {
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 .intro img:nth-child(4) {
-  animation-delay: 6s;
+  animation-delay: 4.5s;
 }
 .intro img:nth-child(5) {
-  animation-delay: 7s;
+  animation-delay: 5s;
 }
 .intro img:nth-child(6) {
-  animation-delay: 8s;
+  animation-delay: 5.5s;
 }
 .intro img:nth-child(7) {
-  animation-delay: 9s;
+  animation-delay: 6s;
 }
 .intro img:nth-child(8) {
-  animation-delay: 10s;
+  animation-delay: 6.5s;
 }
 .intro img:nth-child(9) {
-  animation-delay: 11s;
+  animation-delay: 7s;
 }
 .intro img:nth-child(10) {
-  animation-delay: 12s;
+  animation-delay: 7.5s;
 }
-
-
-
-
-
-
-footer {
-  background-color: var(--cyan);
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-}
-
-
-
-
-/*GALLERY*/
-
-main.gallery {
-  margin: 4% 10% 10% 10%;
-  padding: 5px;
-}
-
-.bigpic {
-  padding: 1%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--carib);
-  color: var(--sun);
-  border-radius: 5px;
-  
-}
-
-.bigpic img{
-  max-width: 60%;
- }
-
-.img-container {
-  display: flex;
-  max-height: 150px;
-  background-color: grey;
-  margin-bottom: 10%;
-
-  
-}
-
-.img-container>img {
-  width: 20%;
-  height: auto;
-  opacity: 0.5;
-
-}
-
-.img-container>img:hover {
-  opacity: 1;
-}
-
-.video-container {
-  display: flex;
-  margin-top: 5%;
-  
-}
-
-#vidtext {
-  padding: 3%;
-
-}
-
-/* TEST FOR MAIN IMAGE */
-
 
 @keyframes appear{
-  0% {opacity:0;}
-  100% {opacity:1;}
+  from {opacity:0;}
+  to {opacity:1;}
 }
 
 
-
-/* CONTACT */
-
-.contact-container {
-  display: flex;
-  margin: 4% 10% 10% 10%;
-  border: 2px solid var(--cel);
-  border-radius: 5px; 
-  flex-wrap: wrap;
-}
-
-.contactUs {
-  padding: 10% 10%;
-  background-color: var(--cel);
-  flex: 1;
-  text-align: center;  
-}
-
-form {
-  padding: 10%;
-  flex: 3;
- 
-}
-
-form >*>* {
-  margin: 5px 0 0 0;
-  padding: 4px;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;  
-}
-
-label, textarea {
-  display: block;
-}
-
-.oneLine>label{
-  display: inline;
- }
-
-input[type=submit] {
-  padding: 5%;
-  width: 100%;
-  background-color: var(--cyan);
-  border: none;
-  border-radius: 5px;
-  box-shadow: 6px 6px 10px grey;
-  color: white;
-
-}
-
-input[type=text],[type=number], textarea {
-  border: 2px solid var(--cyan);
-  border-radius: 5px;
-  box-shadow: 4px 4px 10px grey;
-  padding: 5px;
-  
-}
-
-textarea {
-  resize: vertical;
-  max-height: 300px;
-}
-
-
-
-/*BIOGRAPHY*/
+/*BIOGRAPHY = Our Centre*/
 
 .bio-container {
   display: flex;
@@ -304,10 +192,9 @@ section {
   padding: 3% 2%;
   text-align: center;
   flex: 1;
-  max-width: 40%;
-  border: 2px solid var(--sun);
-  box-shadow: 5px 5px 10px;
-  border-radius: 5px; 
+  border: 2px solid var(--cel);
+  box-shadow: 5px 5px 10px var(--carib);
+  border-radius: 5px;
 }
 
 section img {
@@ -317,8 +204,134 @@ section img {
 
 section:hover {
   flex: 1.5;
-  border: 5px double var(--sun);
+  border: 2px solid var(--sun);
 }
 
 
+/*GALLERY*/
+
+main.gallery {
+  margin: 0 15vw;
+  padding: 0px 10%;
+}
+
+.photogallery {
+  border: 2px solid var(--cel);
+  margin: 5% auto;
+  box-shadow: 5px 5px 10px var(--carib);
+  max-width: 500px;
+}
+
+.bigpic {
+  border-radius: 5px;
+}
+
+.bigpic img {
+  max-width: 100%;
+}
+
+.img-container {
+  display: flex;
+  max-height: 150px;
+}
+
+.img-container>img {
+  width: 20%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.img-container>img:hover {
+  opacity: 1;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5% auto;
+
+}
+#vidtext {
+  padding: 3%;
+}
+
+hr {
+  border-top: 1px solid var(--cyan);
+}
+
+/* CONTACT */
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4% 10%;
+  border: 2px solid var(--cel);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px var(--carib);
+}
+
+.contactUs {
+  padding: 5% 10%;
+  background-color: var(--cel);
+  flex: 1;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+form {
+  padding: 7% 7% 0 5%;
+  flex: 4;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content:flex-start;
+}
+
+input, textarea {
+  margin: 5px 0;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 300px;
+}
+
+.option-container h4 {
+  margin-bottom: 4px;
+}
+
+input[type=text],[type=number], textarea {
+  border: 2px solid var(--cyan);
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 10px var(--cel);
+  padding: 3px;
+  max-width: 70%;
+}
+
+input[type=submit] {
+  padding: 5%;
+  margin-top: 5%;
+  width: 100%;
+  background-color: var(--cyan);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 6px 6px 10px var(--carib);
+  color: white;
+  font-family: 'Josefin Sans', Georgia, sans-serif;
+}
+
+input[type=number] {
+  max-width: 25%;
+}
+
+#thankYou {
+  padding: 10% 0 2% 0;
+}
 
