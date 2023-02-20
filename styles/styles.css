@@ -4,6 +4,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', Georgia, sans-serif;
+  min-height: 100vh; /*TRYING OUT FELXIBLE APPROACH - these three lines*/
+  display: flex;
+  flex-direction: column;
+  align-content:center;
   }
 
 * {
@@ -16,7 +20,7 @@ body {
   --carib: #12343b;
   --cyan: #368f8bff;
   --cel: #c4fff9ff;
-  
+
 }
 
 /* TOP BAR, NAVBAR AND FOOTER -common for all pages */
@@ -81,31 +85,25 @@ a.active {
 
 footer {
   background-color: var(--cyan);
-  padding: 5px 0 2px 0;
   text-align: center;
-  text-decoration: none;
+  font-size: 0.9em;
+  margin-top: auto; /*With body in flex, this helps margin stick to bottom*/
 }
 
 main {
-  margin: 4% 10vw;
+  margin: 0 10vw;
   padding: 0 10%;
 }
 
 
 /* INDEX */
 
-/* main.index {
-  margin: 0 15vw;
-  padding: 0px 10%;
-} */
-
-
 .intro {
-  margin: auto;
-  width: 50vw;  /* change for different sizes later*/
+  margin: auto auto 2% auto;
+  width: 48vw; 
   display: flex;
   justify-content: center;
-  position: relative;  
+  position: relative;
 }
 
 .intro h2 {
@@ -125,7 +123,6 @@ main {
   animation-fill-mode: forwards;
 }
 
-
 .intro img {
   opacity: 0;
   width: 10%;
@@ -137,7 +134,6 @@ main {
 .index p {
   margin: 10px;
   text-align: center;
-  font-size: 0.9em;
   opacity: 0;
   animation-name: appear;
   animation-duration: 4s;
@@ -186,7 +182,7 @@ main {
 
 .bio-container {
   display: flex;
-  margin-bottom: 5%;
+  margin: 4%;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -208,7 +204,7 @@ section img {
 
 section p {
   display: none;
-} 
+}
 
 section:hover {
   flex: 1.5;
@@ -225,14 +221,9 @@ section:hover p {
 
 /*GALLERY*/
 
-/* main.gallery {
-  margin: 0 15vw;
-  padding: 0 10%;
-} */
-
 .photogallery {
   border: 2px solid var(--cel);
-  margin: 5% auto;
+  margin: 2% auto;
   box-shadow: 5px 5px 10px var(--carib);
   max-width: 500px;
 }
@@ -280,7 +271,7 @@ hr {
 .contact-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 4% 5%;
+  margin: 2% auto;
   border: 2px solid var(--cel);
   border-radius: 5px;
   box-shadow: 5px 5px 10px var(--carib);
@@ -350,3 +341,22 @@ input[type=number] {
   padding: 10% 0 2% 0;
 }
 
+@media screen and (max-width: 480px) {
+  main {
+    margin: 2% 1vw;
+    padding: 1px;
+    height: 100vh;
+  }
+  .intro {
+    width: 100%;
+    margin: 0 0 5% 0;
+  }
+  .bio-container {
+    display: block;
+  }
+
+  .bio-container h2 {
+    font-size: 1em;
+  }
+
+}
