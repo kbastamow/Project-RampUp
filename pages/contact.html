@@ -35,49 +35,47 @@
           
       <form>
         <div class="form-container">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" required placeholder="required" autofocus>
-        <label for="contact">Email</label>
-        <input type="text" name="name" id="contact" required placeholder="required">
-        <label for="tel">Telephone</label>
-        <input type="text" name="name" id="tel" placeholder="optional">
-        <label for="question">Write your question(s) here:</label>
-        <textarea id="question" name="question" id="question"></textarea>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required placeholder="required" autofocus>
+          <label for="contact">Email</label>
+          <input type="text" name="name" id="contact" required placeholder="required">
+          <label for="tel">Telephone</label>
+          <input type="text" name="name" id="tel" placeholder="optional">
+          <label for="question">Write your question(s) here:</label>
+          <textarea id="question" name="question" id="question"></textarea>
 
-        <div class="option-container">
-          <h3>Are you looking for lessons?</h3>
-          <h4>Which sport are you interested in?</h4>
-          <input type="checkbox" name="sports" id="kayak">
-          <label for="sports">Kayaking</label>
-          <input type="checkbox" name="sports" id="surf">
-          <label for="sports">Surfing</label>
-          <input type="checkbox" name="sports" id="paddle">
-          <label for="sports">Paddlesurf</label>
-          <input type="checkbox" name="sports" id="skiing">
-          <label for="sports">Water skiing</label>
-        
+          <div class="option-container">
+            <h3>Are you looking for lessons?</h3>
+            <h4>Which sport are you interested in?</h4>
+            <input type="checkbox" name="sports" id="kayak">
+            <label for="sports">Kayaking</label>
+            <input type="checkbox" name="sports" id="surf">
+            <label for="sports">Surfing</label>
+            <input type="checkbox" name="sports" id="paddle">
+            <label for="sports">Paddlesurf</label>
+            <input type="checkbox" name="sports" id="skiing">
+            <label for="sports">Water skiing</label>
+          
+            <h4>Your current level?</h4>
+            <input type="radio" name="level" id="beginner">
+            <label for="beginner">A rookie!</label>
+            <input type="radio" name="level" id="int">
+            <label for="int">I'm getting there</label>
+            <input type="radio" name="level" id="ad">
+            <label for="adv">Like a fish in the water</label> <br><br>
 
-          <h4>Your current level?</h4>
-          <input type="radio" name="level" id="beginner">
-          <label for="beginner">I'm a rookie!</label>
-          <input type="radio" name="level" id="int">
-          <label for="int">I know what I'm doing</label>
-          <input type="radio" name="level" id="ad">
-          <label for="adv">Like a fish in the water</label> <br><br>
+            <label for="number"><b>Number of people (max. 6)</b></label>
+            <input type="number" name="number" id="number" value="1" min="1" max="6">
+          </div>
 
-          <label for="number"><b>Number of people (max. 6)</b></label>
-          <input type="number" name="number" id="number" value="1" min="1" max="6">
+          <div class="send">
+            <input type="submit" value="SEND" onClick="message()">
+          </div>
+          <h3 id="thankYou"></h3> 
+
         </div>
-
-        <div class="send">
-        <input type="submit" value="SEND" onClick="message()">
-        </div>
-        <h3 id="thankYou"></h3> 
-        
-        
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
   </main>
 
   <footer>
@@ -86,7 +84,6 @@
       <i class="fa fa-phone-square" aria-hidden="true"></i> 40 220 330<br>
       <i class="fa fa-envelope" aria-hidden="true"></i>  info@oceansports.com</p>
   </footer>    
-
 
   <script type="text/javascript" src="../js/functions.js"></script>
 </body>
