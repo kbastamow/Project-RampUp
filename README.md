@@ -19,8 +19,12 @@ Minimum requirements consist of:
 
 The project shows a 4-page website for a fictional Watersports Centre. 
 It was built with HTML, CSS and a couple of snippets of JavaScript.
+
+Mediaqueries have been used to make layout responsive at 480px.
+
 Screenshots of work in progress:
 ![Alt text](/assets/Images/screenshot.jpg?raw=true "Screenshots")
+
 
 ## Tools
 
@@ -28,14 +32,14 @@ Visual Studio Code as code editor.
 
 ## Author
 
-*KBastamow
+KBastamow
 
 This was a solo homework project and all the mess in the code can be blamed on the author and no one else.
 Please note that this is my first multi-page project and one of the first projects ever in HTML-CSS.
 
 ## Acknowledgements
 
-Supportive teachers and classmates are the way forward. I would also like to express my gratitude to Google, as well as W3schools and Stack Overflow.
+Supportive teachers and classmates are the way forward. I would also like to express my gratitude to Google, as well as W3schools and Stack Overflow. I have enjoyed the learning experience.
 
 
 
