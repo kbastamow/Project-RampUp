@@ -217,13 +217,11 @@ section:hover p {
 
 
 
-
-
 /*GALLERY*/
 
 .photogallery {
   border: 2px solid var(--cel);
-  margin: 2% auto;
+  margin: 2% auto 5% auto;
   box-shadow: 5px 5px 10px var(--carib);
   max-width: 500px;
 }
@@ -258,7 +256,7 @@ section:hover p {
   margin: 5% auto;
 
 }
-#vidtext {
+.video-container div{
   padding: 3%;
 }
 
@@ -358,5 +356,14 @@ input[type=number] {
   .bio-container h2 {
     font-size: 1em;
   }
+
+  section p {
+    display: block;
+    font-size: 0.9em;
+  }
+  section img {
+    max-width: 50px;
+  }
+
 
 }
